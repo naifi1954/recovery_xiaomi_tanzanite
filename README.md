@@ -1,8 +1,7 @@
 > [!WARNING]
-> Rebase, Force Push, and Low Quality / Lazy Commit Messages. you've been warned.
+> For the android12-5.10 base kernel only
 
-
-TWRP Recovery Tree for Xiaomi Redmi Note 14 4G (Tanzanite)
+Recovery Tree for Xiaomi Redmi Note 14 4G (Tanzanite)
 ===========================================
 
 The Xiaomi Redmi Note 14 4G is a budget range smartphone from Xiaomi, announced in January 2025.
@@ -45,20 +44,3 @@ Works:
 - [X] USB OTG
 - [X] SD Card
 - [X] Touch
-- [ ] Flashlight
-- [ ] Vibrator
-
-## Building
-### TWRP, PBRP
-_Lunch_ command :
-
-```
-lunch twrp_tanzanite-eng && mka vendorbootimage
-```
-
-### SHRP, OrangeFox
-_Lunch_ command :
-
-```
-lunch twrp_tanzanite-eng && mka adbd vendorbootimage
-```
