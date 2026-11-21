@@ -59,3 +59,6 @@ OF_BIND_MOUNT_SDCARD_ON_FORMAT := 1
 
 # don't spam the console with loop errors
 OF_LOOP_DEVICE_ERRORS_TO_LOG := 1
+
+# Etc
+OF_MAINTAINER := Rufnxprjkt
