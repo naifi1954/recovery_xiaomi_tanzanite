@@ -20,8 +20,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
 ENABLE_VIRTUAL_AB := true
 AB_OTA_UPDATER := true
+
 AB_OTA_PARTITIONS := \
     boot \
+    dtbo \
+    lk \
     vendor_boot \
     system \
     system_ext \
