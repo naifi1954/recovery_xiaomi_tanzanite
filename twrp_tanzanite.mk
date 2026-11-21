@@ -29,10 +29,9 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := 24117RN76O
+PRODUCT_MODEL := Redmi Note 14 4G
 PRODUCT_MANUFACTURER := xiaomi
