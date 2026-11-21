@@ -1,12 +1,8 @@
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <android-base/properties.h>
+#include <string>
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
-using android::base::GetProperty;
 using std::string;
 
 void property_override(string prop, string value)
@@ -21,14 +17,11 @@ void property_override(string prop, string value)
 
 void vendor_load_properties()
 {
-    string prop_partitions[] = {"", "vendor.", "odm."};
+    string prop_partitions[] = {"", "system.", "vendor.", "odm."};
     for (const string &prop : prop_partitions)
     {
-        property_override(string("ro.product.") + prop + string("brand"), "Redmi");
         property_override(string("ro.product.") + prop + string("name"), "tanzanite");
+        property_override(string("ro.product.") + prop + string("marketname"), "Redmi Note 14 4G");
         property_override(string("ro.product.") + prop + string("device"), "tanzanite");
-        property_override(string("ro.product.") + prop + string("model"), "24117RN76O");
-        property_override(string("ro.product.") + prop + string("marketname"), "Redmi Note 14");
-        property_override(string("ro.product.system.") + prop + string("device"), "Redmi Note 14");
     }
 }
