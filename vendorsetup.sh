@@ -19,8 +19,10 @@
 # 	Please maintain this if you use this script or any part of it
 #
 
+FDEVICE=tanzanite
+
 export LC_ALL="C.UTF-8"
-export FOX_VARIANT="A12+_AOSP"
+export FOX_VARIANT="A12+_HOS"
 export FOX_MAINTAINER_PATCH_VERSION=$(date +"%Y%m%d")
 export FOX_AB_DEVICE=1
 export FOX_VIRTUAL_AB_DEVICE=1
@@ -32,8 +34,9 @@ export FOX_VENDOR_BOOT_RECOVERY_FULL_REFLASH=1
 export FOX_VENDOR_BOOT_RECOVERY=1
 export FOX_USE_XZ_UTILS=1
 export FOX_USE_UPDATED_MAGISKBOOT=1
-export FOX_TARGET_DEVICES="tanzanite"
-export TARGET_DEVICE_ALT="tanzanite"
+export FOX_BUILD_DEVICE="$FDEVICE"
+export FOX_TARGET_DEVICES="$FDEVICE"
+export TARGET_DEVICE_ALT="$FDEVICE"
 export FOX_DISABLE_UPDATEZIP=1
 export FOX_DELETE_AROMAFM=1
 export FOX_DELETE_MAGISK_ADDON=1
