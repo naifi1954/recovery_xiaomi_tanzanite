@@ -17,7 +17,7 @@ void property_override(string prop, string value)
 
 void vendor_load_properties()
 {
-    string prop_partitions[] = {"", "system.", "vendor.", "odm."};
+    string prop_partitions[] = {"", "system.", "vendor."};
     for (const string &prop : prop_partitions)
     {
         property_override(string("ro.product.") + prop + string("name"), "tanzanite");
